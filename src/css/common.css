@@ -26,6 +26,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 0;
+}
 
 .body-index {
   background-image: url(../image/main-background.jpg);
@@ -40,7 +43,8 @@ ul {
 }
 
 a {
-  padding: 15px 25px;
+  display: inline-block;
+  padding: 10px 25px;
   text-decoration: none;
   border-radius: 8px;
   font-size: 18px;
@@ -83,6 +87,89 @@ a:focus {
 }
 
 .switcher-button:disabled {
+  background-color: #D5D3D3;
+  color: #8A8A8A;
+}
+
+/* Timer */
+.timer-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.timer-picker {
+  margin-bottom: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid #ACB5AA;
+  background-color: #FFF;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  align-items: center;
+  margin-right: 20px;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #FFF;
+  border: 5px solid #ACB5AA;
+}
+
+.value {
+  color: #413B3B;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.label {
+  color: #413B3B;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.start-btn {
+  border-radius: 8px;
+  margin: 0 20px;
+  width: 140px;
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 700;
+  border: none;
+  background-color: #ACB5AA;
+  box-shadow: 8px 8px 8px 0px rgba(59, 76, 65, 0.25);
+  color: #413B3B;
+}
+.start-btn:hover,
+.start-btn:focus {
+  background-color: #5C7D6B;
+  color: #FFF;
+}
+.start-btn:disabled {
   background-color: #D5D3D3;
   color: #8A8A8A;
 }
