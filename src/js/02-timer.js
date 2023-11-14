@@ -9,7 +9,6 @@ const daysEl = document.querySelector('[data-days]');
 const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
-const spansEl = document.querySelectorAll('.value');
 
 const options = {
     enableTime: true,
@@ -60,7 +59,7 @@ function handleStartClick() {
         if (timeDifference < 1000) {
             clearInterval(timerId);
             dateTime.disabled = false;
-            startBtn.disabled = false;
+            startBtn.disabled = true;
         }
 
 
